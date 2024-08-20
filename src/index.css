@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family:"Code";
+  src: local("Code.ttf"),
+  url('./assets/fonts/Code.ttf') format("truetype");
+
+};
