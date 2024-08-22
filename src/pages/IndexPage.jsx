@@ -14,7 +14,7 @@ function IndexPage() {
       }, []);
 
       const ProjectData = [
-        { name: 'Bloggg', subInfo:'A project', image:BlogggImg },
+        { name: 'Bloggg', subInfo:'A projectfdddddd d d dddddddddddddddddd ddddddd aaaaaaaaaaaaaa', image:BlogggImg },
         { name: 'Firebnb', subInfo:'A project', image:BlogggImg },
         { name: 'TypeDash', subInfo:'A project', image:BlogggImg }
       ]
@@ -65,11 +65,11 @@ ProjectData.map((items)=>(
 
 <div class="flex w-full h-64 mt-10">
 
-  <div class="flex pl-60 w-1/2 border">
+  <div class="flex pl-60 w-1/2 border border-blue-700 my-auto">
 
 
-  <div className='flex flex-col justify-center '>
-    <div className=" text-4xl px-10">
+  <div className='flex flex-col text-left  '>
+    <div className=" text-4xl">
       {items.name} 
     </div>
     <div className=''>
@@ -84,24 +84,6 @@ ProjectData.map((items)=>(
   </div>
 </div>
 
-
-
-//   <div className="w-full mt-10 flex  border">
-//   <div className="flex space-x-28 items-center justify-between ">
-    // <div className='flex flex-col justify-center'>
-    // <div className=" text-4xl px-10">
-    //   {items.name} 
-    // </div>
-    // <div>
-    //   {items.subInfo}
-    // </div>
-
-    // </div>
-//     <div className="flex w-full items-center">
-//       <Cards image={items.image} />
-//     </div>
-//   </div>
-// </div>
 
 ))
 
