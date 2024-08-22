@@ -57,8 +57,11 @@ function IndexPage() {
       </div>
     </div>
 
-    <div className="w-fit ">
+    <div className=" mt-4">
       <ImageGallery/>
+      
+
+      
     </div>
 
     <div id='projectsText' className='text-6xl mt-20 text-green-600'>

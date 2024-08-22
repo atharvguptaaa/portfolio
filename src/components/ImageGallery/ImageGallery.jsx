@@ -14,13 +14,17 @@ const images = [
   { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/b5a6be89944dbcab16a137f9e0efc6c481bbdc68d21892263c47ae9301daf100?placeholderIfAbsent=true&apiKey=2fad3b42e6974573944ad9b33015c121", width: "181px", aspectRatio: "0.89" }
 ];
 
+const loopedImages = [...images, ...images];
+
 function ImageGallery() {
   return (
-    <section className="flex overflow-x-auto gap-10 items-center px-5 py-5 ">
-      {images.map((image, index) => (
-        <ImageItem key={index} {...image} />
-      ))}
-    </section>
+    <div className="relative overflow-hidden">
+      <div className="flex gap-10 animate-loop-scroll ">
+        {loopedImages.map((image, index) => (
+          <ImageItem key={index} {...image} />
+        ))}
+      </div>
+    </div>
   );
 }
 

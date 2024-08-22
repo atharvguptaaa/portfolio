@@ -11,14 +11,14 @@ export default {
       },
 
       keyframes: {
-        slide: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' }
-        }
+        "loop-scroll": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-168%)" },
+        },
       },
       animation: {
-        slide: 'slide 30s linear infinite'
-      }
+        "loop-scroll": "loop-scroll 10s linear infinite",
+      },
 
     },
   },
