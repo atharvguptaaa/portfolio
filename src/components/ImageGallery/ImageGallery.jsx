@@ -16,7 +16,7 @@ const images = [
 
 function ImageGallery() {
   return (
-    <section className="flex overflow-x-auto gap-10 items-center px-5 py-5 hide-scrollbar">
+    <section className="flex overflow-x-auto gap-10 items-center px-5 py-5 ">
       {images.map((image, index) => (
         <ImageItem key={index} {...image} />
       ))}
