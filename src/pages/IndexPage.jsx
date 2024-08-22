@@ -4,8 +4,7 @@ import gsap from 'gsap';
 import Cards from '../components/Cards';
 import BlogggImg from "../assets/bloggg.png";
 import TypeDashImg from "../assets/TypeDash.png";
-
-
+import ImageGallery from '../components/ImageGallery/ImageGallery';
 function IndexPage() {
 
     useEffect(() => {
@@ -58,6 +57,10 @@ function IndexPage() {
       </div>
     </div>
 
+    <div className="w-fit ">
+      <ImageGallery/>
+    </div>
+
     <div id='projectsText' className='text-6xl mt-20 text-green-600'>
         Projects :
     </div>
@@ -73,7 +76,7 @@ ProjectData.map((items)=>(
     <div className=" text-4xl">
       {items.name} 
     </div>
-    <div className=''>
+    <div className='text-xl mt-2'>
       {items.subInfo}
     </div>
 
