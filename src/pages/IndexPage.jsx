@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import gsap from 'gsap';
 import Cards from '../components/Cards';
 import BlogggImg from "../assets/bloggg.png";
+import TypeDashImg from "../assets/TypeDash.png";
 
 
 function IndexPage() {
@@ -14,15 +15,15 @@ function IndexPage() {
       }, []);
 
       const ProjectData = [
-        { name: 'Bloggg', subInfo:'A projectfdddddd d d dddddddddddddddddd ddddddd aaaaaaaaaaaaaa', image:BlogggImg },
-        { name: 'Firebnb', subInfo:'A project', image:BlogggImg },
-        { name: 'TypeDash', subInfo:'A project', image:BlogggImg }
+        { name: 'Bloggg', subInfo:'A Blog Site to share images and text blogs.', image:BlogggImg },
+        { name: 'Firebnb', subInfo:'A full-stack hotel booking site. ', image:BlogggImg },
+        { name: 'TypeDash', subInfo:'A typing Speed Tester', image:TypeDashImg }
       ]
 
   return (
     <div id="bic" className='text-white'>
     <div className='flex'>
-      <div className=' mt-8 p-6 text-4xl'>
+      <div className=' mt-12 p-6 text-4xl'>
         
       <TypeAnimation
       sequence={[
@@ -57,15 +58,15 @@ function IndexPage() {
       </div>
     </div>
 
-    <div id='projectsText' className='text-6xl mt-20'>
-        Projects
+    <div id='projectsText' className='text-6xl mt-20 text-green-600'>
+        Projects :
     </div>
 {
 ProjectData.map((items)=>(
 
 <div class="flex w-full h-64 mt-10">
 
-  <div class="flex pl-60 w-1/2 border border-blue-700 my-auto">
+  <div class="flex pl-60 w-1/2  my-auto">
 
 
   <div className='flex flex-col text-left  '>
