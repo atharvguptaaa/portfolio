@@ -6,7 +6,7 @@ function ImageItem({ src, width, aspectRatio, className = "" }) {
       loading="lazy"
       src={src}
       alt=""
-      className={`object-contain shrink-0 self-stretch my-auto max-w-full aspect-[${aspectRatio}] w-[${width}] ${className}`}
+      className={`object-contain mx-4 shrink-0 self-stretch my-auto max-w-full aspect-[${aspectRatio}] w-[${width}] ${className}`}
     />
   );
 }

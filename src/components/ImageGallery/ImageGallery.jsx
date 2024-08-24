@@ -18,8 +18,8 @@ const loopedImages = [...images, ...images];
 
 function ImageGallery() {
   return (
-    <div className="relative overflow-hidden">
-      <div className="flex gap-10 animate-loop-scroll ">
+    <div className="overflow-hidden bg-lime-100">
+      <div className="flex animate-loop-scroll">
         {loopedImages.map((image, index) => (
           <ImageItem key={index} {...image} />
         ))}

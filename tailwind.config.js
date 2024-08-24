@@ -13,11 +13,11 @@ export default {
       keyframes: {
         "loop-scroll": {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-168%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
-        "loop-scroll": "loop-scroll 10s linear infinite",
+        "loop-scroll": "loop-scroll 5s linear infinite",
       },
 
     },
