@@ -16,41 +16,39 @@ function IndexPage() {
 
   return (
     <div id="bic" className='text-white'>
-    <div className='flex'>
-      <div className=' mt-12 p-6 text-4xl'>
-        
-      <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        '<Atharv Gupta>',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
       
-      ]}
-      wrapper="span"
-      speed={1}
-      style={{ fontSize: '3em', display: 'inline-block' }}
-      repeat={Infinity}
-    />
-      </div>
-    </div>
-
-    <div className='flex'>
-      <div className=' mt-8 p-6 text-3xl'>
-        
-      <TypeAnimation className='delay-2000'
+      <div className="flex justify-center sm:justify-start">
+  <div className="mt-12 p-6 text-sm sm:text-2xl lg:text-4xl whitespace-nowrap">
+    <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
-        '<Full-Stack Dev>',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        
+        "<Atharv Gupta>",
+        1000,
       ]}
       wrapper="span"
       speed={1}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={{ fontSize: "3em", display: "inline-block" }}
       repeat={Infinity}
     />
-      </div>
-    </div>
+  </div>
+</div>
+
+<div className="flex justify-center sm:justify-start">
+  <div className="mt-8 p-6 text-sm sm:text-2xl lg:text-3xl  whitespace-nowrap">
+    <TypeAnimation
+      className="delay-2000"
+      sequence={[
+        "<Full-Stack Dev>",
+        1000,
+      ]}
+      wrapper="span"
+      speed={1}
+      style={{ fontSize: "2em", display: "inline-block" }}
+      repeat={Infinity}
+    />
+  </div>
+</div>
+
+
 
  
     <div id="aboutMe" className='mt-14'>

@@ -14,7 +14,7 @@ export default function Projects(){
         {ProjectData.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col lg:flex-row items-center  lg:justify-between w-full gap-6 lg:gap-12"
+            className="flex flex-col lg:flex-row items-center  lg:justify-between w-full gap-6 lg:gap-8"
           >
             {/* Text Section */}
             <div className="flex flex-col text-center lg:text-left lg:items-start w-full lg:w-1/2 lg:ml-24">
