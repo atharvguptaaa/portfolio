@@ -25,7 +25,7 @@ function IndexPage() {
       <SkillsComponent/>
     </div>
 
-    <div id='projectsText' className='text-6xl mt-20 text-green-600'>
+    <div id='projectsText' className='text-4xl sm:text-6xl mt-20 text-green-600'>
         Projects :
     </div>
 
@@ -33,7 +33,7 @@ function IndexPage() {
     <Projects/>
     </div>
 
-<div>
+<div className='mt-20'>
   <Footer/>
 </div>
  
