@@ -18,7 +18,7 @@ function IndexPage() {
     <div id="bic" className='text-white'>
       
       <div className="flex justify-center sm:justify-start">
-  <div className="mt-8 p-6 text-4xl sm:text-6xl md:text-8xl whitespace-nowrap">
+  <div className="mt-8 p-2 text-4xl sm:text-6xl md:text-8xl whitespace-nowrap">
     <TypeAnimation
       sequence={[
         "<Atharv Gupta>",
