@@ -71,39 +71,41 @@ export default function Header() {
       </div>
 
       <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2 ">
-        {navigation.map((item) => (
-                  item.to?(
-                    <Link
+          <div className="space-y-1 px-4 pb-3 pt-2">
+            {navigation.map((item) =>
+              item.to ? (
+                <Link
+                  key={item.name}
                   to={item.to}
                   offset={item.offset}
                   smooth={true}
                   duration={500}
-                    key={item.name}
-                    className={classNames(
-                      item.current ? ' bg-gray-900 text-white' : 'text-gray-300 hover:bg-green-950 hover:text-green-400',
-                      'px-3 py-2 text-xl font-medium cursor-pointer' ,
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                  ):(
-                    <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
-                    className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gragreen-95y-300 hover:bg-0 hover:text-green-400',
-                      ' px-3 py-2 text-xl font-medium',
-                    )}
-                  >
-                    {item.name}
-                  </a>
-                  )
-
-                ))}
-        </div>
-      </DisclosurePanel>
+                  className={classNames(
+                    item.current
+                      ? 'bg-gray-900 text-white'
+                      : 'text-gray-300 hover:bg-green-950 hover:text-green-400',
+                    'block px-3 py-2 text-xl font-medium cursor-pointer'
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? 'bg-gray-900 text-white'
+                      : 'text-gray-300 hover:bg-green-950 hover:text-green-400',
+                    'block px-3 py-2 text-xl font-medium'
+                  )}
+                >
+                  {item.name}
+                </a>
+              )
+            )}
+          </div>
+        </DisclosurePanel>
     </Disclosure>
 
     </div>
