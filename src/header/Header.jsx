@@ -1,11 +1,12 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-scroll'
 
 const navigation = [
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Github', href: '#', current: false },
-  { name: 'About Me', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Projects', href: '#', current: false, to:"projects",offset:-95 },
+  { name: 'Github', href: 'https://github.com/atharvguptaaa', current: false },
+  { name: 'About Me', href: '#', current: false,to:'aboutMe',offset:-70 },
+  { name: 'Contact', href: '#', current: false, to:"contact",offset:-95},
 ]
 
 function classNames(...classes) {
@@ -32,7 +33,22 @@ export default function Header() {
             <div className="hidden sm:ml-2 sm:block">
               <div className="flex space-x-8">
                 {navigation.map((item) => (
-                  <a
+                  item.to?(
+                    <Link
+                  to={item.to}
+                  offset={item.offset}
+                  smooth={true}
+                  duration={500}
+                    key={item.name}
+                    className={classNames(
+                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-green-950 hover:text-green-400',
+                      ' px-3 py-2 text-xl font-medium cursor-pointer',
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                  ):(
+                    <a
                     key={item.name}
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
@@ -43,6 +59,8 @@ export default function Header() {
                   >
                     {item.name}
                   </a>
+                  )
+
                 ))}
               </div>
             </div>
@@ -54,20 +72,36 @@ export default function Header() {
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2 ">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? 'page' : undefined}
-              className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
+        {navigation.map((item) => (
+                  item.to?(
+                    <Link
+                  to={item.to}
+                  offset={item.offset}
+                  smooth={true}
+                  duration={500}
+                    key={item.name}
+                    className={classNames(
+                      item.current ? ' bg-gray-900 text-white' : 'text-gray-300 hover:bg-green-950 hover:text-green-400',
+                      'px-3 py-2 text-xl font-medium cursor-pointer' ,
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                  ):(
+                    <a
+                    key={item.name}
+                    href={item.href}
+                    aria-current={item.current ? 'page' : undefined}
+                    className={classNames(
+                      item.current ? 'bg-gray-900 text-white' : 'text-gragreen-95y-300 hover:bg-0 hover:text-green-400',
+                      ' px-3 py-2 text-xl font-medium',
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                  )
+
+                ))}
         </div>
       </DisclosurePanel>
     </Disclosure>

@@ -1,10 +1,12 @@
-import React,{useEffect} from 'react'
+import {useEffect} from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import gsap from 'gsap';
 import Cards from '../components/Cards';
 import BlogggImg from "../assets/bloggg.png";
+import firebnb from "../assets/firebnb.png";
 import TypeDashImg from "../assets/TypeDash.png";
-import ImageGallery from '../components/ImageGallery/ImageGallery';
+import SkillsComponent from '../components/ImageGallery/SkillsComponent';
+import Footer from '../Footer';
 function IndexPage() {
 
     useEffect(() => {
@@ -15,7 +17,7 @@ function IndexPage() {
 
       const ProjectData = [
         { name: 'Bloggg', subInfo:'A Blog Site to share images and text blogs.', image:BlogggImg },
-        { name: 'Firebnb', subInfo:'A full-stack hotel booking site. ', image:BlogggImg },
+        { name: 'Firebnb', subInfo:'A full-stack hotel booking site. ', image:firebnb },
         { name: 'TypeDash', subInfo:'A typing Speed Tester', image:TypeDashImg }
       ]
 
@@ -57,44 +59,50 @@ function IndexPage() {
       </div>
     </div>
 
-    <div className=" mt-4">
-      <ImageGallery/>
-      
-
-      
+ 
+    <div id="aboutMe" className='mt-14'>
+      <SkillsComponent/>
     </div>
 
     <div id='projectsText' className='text-6xl mt-20 text-green-600'>
         Projects :
     </div>
+<div id="projects">
 {
 ProjectData.map((items)=>(
 
-<div class="flex w-full h-64 mt-10">
-
-  <div class="flex pl-60 w-1/2  my-auto">
-
-
-  <div className='flex flex-col text-left  '>
-    <div className=" text-4xl">
-      {items.name} 
+  <>
+  <div className="flex w-full h-64 mt-10">
+  
+    <div className="flex pl-60 w-1/2  my-auto">
+  
+  
+    <div className='flex flex-col text-left  '>
+      <div className=" text-4xl">
+        {items.name} 
+      </div>
+      <div className='text-xl mt-2'>
+        {items.subInfo}
+      </div>
+  
+      </div>
+  
     </div>
-    <div className='text-xl mt-2'>
-      {items.subInfo}
+    <div className="flex items-center justify-center ">
+    <Cards image={items.image} />
     </div>
-
-    </div>
-
   </div>
-  <div class="flex items-center justify-center ">
-  <Cards image={items.image} />
-  </div>
-</div>
-
-
-))
+  </>
+  
+  
+  ))
 
 }
+</div>
+
+<div>
+  <Footer/>
+</div>
  
    
   </div>
