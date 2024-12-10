@@ -35,10 +35,10 @@ const SkillsComponent = () => {
     <div className="flex flex-col md:flex-row bg-green-500 text-black p-6 sm:p-10">
     {/* About Me Section */}
     <div className="pr-0 md:pr-8 mb-6 md:mb-0">
-      <div className="text-left text-3xl sm:text-4xl font-bold mb-4">
+      <div className="text-center md:text-left text-3xl sm:text-4xl font-bold mb-4">
         About Me • Skills
       </div>
-      <p className="text-left text-lg sm:text-2xl tracking-tight max-w-3xl mx-auto">
+      <p className="text-center md:text-left text-lg sm:text-2xl tracking-tight max-w-3xl mx-auto">
         A fullstack web developer passionate about creating seamless digital experiences. I enjoy bringing ideas to life through innovative code and design, and I’m excited to collaborate on impactful projects in the ever-evolving tech world.
       </p>
     </div>
