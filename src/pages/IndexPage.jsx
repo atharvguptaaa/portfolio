@@ -18,7 +18,7 @@ function IndexPage() {
     <div id="bic" className='text-white'>
       
       <div className="flex justify-center sm:justify-start">
-  <div className="mt-12 p-6 text-sm sm:text-2xl lg:text-4xl whitespace-nowrap">
+  <div className="mt-8 p-6 text-4xl sm:text-6xl md:text-8xl whitespace-nowrap">
     <TypeAnimation
       sequence={[
         "<Atharv Gupta>",
@@ -26,14 +26,14 @@ function IndexPage() {
       ]}
       wrapper="span"
       speed={1}
-      style={{ fontSize: "3em", display: "inline-block" }}
+      style={{  display: "inline-block" }}
       repeat={Infinity}
     />
   </div>
 </div>
 
 <div className="flex justify-center sm:justify-start">
-  <div className="mt-8 p-6 text-sm sm:text-2xl lg:text-3xl  whitespace-nowrap">
+  <div className="mt-8 p-6 text-2xl sm:text-4xl md:text-6xl whitespace-nowrap">
     <TypeAnimation
       className="delay-2000"
       sequence={[
@@ -42,7 +42,7 @@ function IndexPage() {
       ]}
       wrapper="span"
       speed={1}
-      style={{ fontSize: "2em", display: "inline-block" }}
+      style={{ display: "inline-block" }}
       repeat={Infinity}
     />
   </div>
