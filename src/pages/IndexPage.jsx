@@ -21,7 +21,7 @@ function IndexPage() {
     <MainText/>
 
  
-    <div id="aboutMe" className='mt-6 sm:mt-14'>
+    <div id="aboutMe" className='mt-8 sm:mt-14'>
       <SkillsComponent/>
     </div>
 
