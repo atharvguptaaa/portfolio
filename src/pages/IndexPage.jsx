@@ -18,10 +18,10 @@ function IndexPage() {
     <div id="bic" className='text-white'>
       
       <div className="flex justify-center sm:justify-start">
-  <div className="justify-center sm:justify-start mt-8 p-6 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
+  <div className="justify-center sm:justify-start mt-8 p-6 ml-3 sm:ml-0 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
     <TypeAnimation
       sequence={[
-        " <Atharv Gupta>",
+        "<Atharv Gupta>",
         1000,
       ]}
       wrapper="span"
@@ -32,12 +32,12 @@ function IndexPage() {
   </div>
 </div>
 
-<div className="flex justify-center sm:justify-start">
-  <div className="mt-8 p-6 text-2xl sm:text-4xl md:text-6xl whitespace-nowrap">
+<div className=" mt-2 md:mt-8  flex justify-center sm:justify-start">
+  <div className=" p-6 text-2xl sm:text-4xl md:text-6xl whitespace-nowrap">
     <TypeAnimation
       className="delay-2000"
       sequence={[
-        " <Full-Stack Dev>",
+        "<Full-Stack Dev>",
         1000,
       ]}
       wrapper="span"
@@ -51,7 +51,7 @@ function IndexPage() {
 
 
  
-    <div id="aboutMe" className='mt-14'>
+    <div id="aboutMe" className='mt-10 sm:mt-14'>
       <SkillsComponent/>
     </div>
 
