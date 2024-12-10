@@ -25,7 +25,7 @@ function IndexPage() {
       <SkillsComponent/>
     </div>
 
-    <div id='projectsText' className='text-5xl sm:text-6xl mt-20 text-green-600'>
+    <div id='projectsText' className='text-4xl font-bold sm:text-6xl mt-20 text-green-600'>
         Projects :
     </div>
 
