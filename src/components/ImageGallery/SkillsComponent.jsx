@@ -38,7 +38,7 @@ const SkillsComponent = () => {
       <div className="text-center md:text-left text-3xl sm:text-4xl font-bold mb-4">
         About Me • Skills
       </div>
-      <p className="text-center md:text-left text-lg sm:text-2xl tracking-tight max-w-3xl mx-auto">
+      <p className="text-justify md:text-left text-lg sm:text-2xl tracking-tight max-w-3xl mx-auto">
         A fullstack web developer passionate about creating seamless digital experiences. I enjoy bringing ideas to life through innovative code and design, and I’m excited to collaborate on impactful projects in the ever-evolving tech world.
       </p>
     </div>
