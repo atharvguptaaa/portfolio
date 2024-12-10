@@ -18,10 +18,10 @@ function IndexPage() {
     <div id="bic" className='text-white'>
       
       <div className="flex justify-center sm:justify-start">
-  <div className="mt-8 p-6 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
+  <div className="justify-center sm:justify-start mt-8 p-6 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
     <TypeAnimation
       sequence={[
-        "<Atharv Gupta>",
+        " <Atharv Gupta>",
         1000,
       ]}
       wrapper="span"
@@ -37,7 +37,7 @@ function IndexPage() {
     <TypeAnimation
       className="delay-2000"
       sequence={[
-        "<Full-Stack Dev>",
+        " <Full-Stack Dev>",
         1000,
       ]}
       wrapper="span"
