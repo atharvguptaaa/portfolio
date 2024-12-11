@@ -1,10 +1,15 @@
+@font-face {
+  font-family: "Code";
+  src: local("Code"), /* Match system-installed font name */
+       url('./assets/fonts/Code.ttf') format("truetype"); /* Use the provided font file */
+}
+
+@font-face {
+  font-family: "Zrnic";
+  src: local("Zrnic"), /* Match system-installed font name */
+       url('./assets/fonts/zrnic rg.otf') format("opentype"); /* Use the provided font file */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face{
-  font-family:"Code";
-  src: local("Code.ttf"),
-  url('./assets/fonts/Code.ttf') format("truetype");
-
-};

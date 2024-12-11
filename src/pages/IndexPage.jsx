@@ -1,7 +1,6 @@
 import {useEffect} from 'react'
-import { TypeAnimation } from 'react-type-animation';
 import gsap from 'gsap';
-import SkillsComponent from '../components/ImageGallery/SkillsComponent';
+import SkillsComponent from '../components/SkillsComponent';
 import Footer from '../Footer';
 import Projects from '../components/Projects';
 import MainText from '../components/MainText';

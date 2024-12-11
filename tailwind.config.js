@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        code:['Code']
+        code:['Code'],
+        zrnic:['Zrnic']
       },
 
       keyframes: {
