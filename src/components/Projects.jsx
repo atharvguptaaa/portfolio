@@ -11,6 +11,7 @@ export default function Projects() {
         "A feature-rich blogging platform enabling users to share images and text-based posts with seamless interaction.",
       image: BlogggImg,
       technologies: ["React", "Redux Toolkit", "Appwrite"],
+      link: "https://blogatharv.vercel.app/",
     },
     {
       name: "Firebnb",
@@ -18,6 +19,7 @@ export default function Projects() {
         "A full-stack hotel booking application providing users with a robust interface for seamless reservation management.",
       image: firebnb,
       technologies: ["MongoDB", "Express.js", "React"],
+      link: "https://your-firebnb-link.com",
     },
     {
       name: "TypeDash",
@@ -25,6 +27,7 @@ export default function Projects() {
         "An interactive typing speed testing application measuring speed and accuracy with real-time feedback.",
       image: TypeDashImg,
       technologies: ["React", "Tailwind CSS", "Custom API"],
+      link: "https://typing-speed-test-chi.vercel.app/",
     },
   ];
 
@@ -58,8 +61,10 @@ export default function Projects() {
           </div>
 
           {/* Image/Card Section */}
-          <div className="flex justify-center lg:justify-start w-full lg:w-1/2">
-            <Cards image={item.image} />
+          <div className="flex justify-center lg:ml-14 lg:justify-start w-full lg:w-1/2">
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <Cards image={item.image} />
+            </a>
           </div>
         </div>
       ))}
