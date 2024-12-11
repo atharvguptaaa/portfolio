@@ -19,7 +19,7 @@ function MainText() {
   </div>
 </div>
 
-<div className=" -mt-1 sm:mt-4 md:mt-8  flex justify-center sm:justify-start font-code tracking-tighter">
+<div className=" -mt-4 sm:mt-4 md:mt-8  flex justify-center sm:justify-start font-code tracking-tighter">
   <div className=" p-6 text-2xl sm:text-4xl md:text-6xl ml-3 sm:ml-0 whitespace-nowrap">
     <TypeAnimation
       className="delay-2000"
