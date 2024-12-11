@@ -5,7 +5,7 @@ function MainText() {
     <>
 
 <div className="flex justify-center sm:justify-start font-code tracking-tighter">
-  <div className="justify-center sm:justify-start  mt-6 sm:mt-8 p-6 ml-6 sm:ml-0 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
+  <div className="justify-center sm:justify-start  sm:mt-2 p-6 ml-6 sm:ml-0 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
     <TypeAnimation
       sequence={[
         "<Atharv Gupta>",
