@@ -34,7 +34,7 @@ const SkillsComponent = () => {
   return (
     <div className="flex flex-col md:flex-row bg-green-500 text-black p-6 sm:p-10">
     {/* About Me Section */}
-    <div className="pr-0 md:pr-8 mb-6 md:mb-0">
+    <div className="pr-0 md:pr-20 mb-6 md:mb-0">
       <div className="text-center md:text-left text-3xl sm:text-4xl font-bold mb-4">
         About Me • Skills
       </div>
