@@ -52,7 +52,7 @@ export default function Projects() {
               {item.technologies.map((tech, techIndex) => (
                 <button
                   key={techIndex}
-                  className="px-4 py-2 bg-green-400 text-black text-md rounded-lg hover:bg-green-600"
+                  className="px-4 py-2 bg-green-500 text-black text-md rounded-lg hover:bg-green-600"
                 >
                   {tech}
                 </button>
