@@ -4,8 +4,8 @@ function MainText() {
   return (
     <>
 
-<div className="flex justify-center sm:justify-start font-code">
-  <div className="justify-center sm:justify-start  mt-6 sm:mt-8 p-6 ml-4 sm:ml-0 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
+<div className="flex justify-center sm:justify-start font-code tracking-tighter">
+  <div className="justify-center sm:justify-start  mt-6 sm:mt-8 p-6 ml-6 sm:ml-0 text-3xl sm:text-6xl md:text-8xl whitespace-nowrap">
     <TypeAnimation
       sequence={[
         "<Atharv Gupta>",
@@ -19,8 +19,8 @@ function MainText() {
   </div>
 </div>
 
-<div className=" mt-1 sm:mt-4 md:mt-8  flex justify-center sm:justify-start font-code">
-  <div className=" p-6 text-2xl sm:text-4xl md:text-6xl whitespace-nowrap">
+<div className=" mt-1 sm:mt-4 md:mt-8  flex justify-center sm:justify-start font-code tracking-tighter">
+  <div className=" p-6 text-2xl sm:text-4xl md:text-6xl ml-3 sm:ml-0 whitespace-nowrap">
     <TypeAnimation
       className="delay-2000"
       sequence={[
