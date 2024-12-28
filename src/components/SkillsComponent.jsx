@@ -1,16 +1,20 @@
 import StackIcon from "tech-stack-icons";
 
 const skills = [
-  "JAVASCRIPT", "C++", "REACT.JS", "NODE.JS", "VITE", "MONGODB", 
-  "HTML", "CSS", "MYSQL", "GIT", "TAILWIND", "GITHUB", "NPM", 
-  "FIREBASE", "GITHUB PAGES", "VERCEL", "EXPRESS.JS", "JWT", 
-  "TYPESCRIPT", "PYTHON"
+  "TYPESCRIPT", "REACT.JS", "Angular", "NODE.JS", "JAVASCRIPT", "C++", 
+  "HTML", "CSS", "MONGODB", "MYSQL", "PostgreSql","GIT", "TAILWIND", "Sass", "GITHUB", "NPM", 
+  "FIREBASE", "GITHUB PAGES", "VITE", "VERCEL","Redis", "EXPRESS.JS", "JWT", 
+   "PYTHON"
 ];
 
 const skillsIcons = {
   "JAVASCRIPT": <StackIcon name="js" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
   "C++": <StackIcon name="c++" className="w-5 h-5 grayscale group-hover:grayscale-0  mt-1" />,
   "REACT.JS": <StackIcon name="reactjs" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
+  "Angular": <StackIcon name="angular" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1"/>,
+  "PostgreSql":<StackIcon name="postgresql" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1"/>,
+  "Redis":<StackIcon name="redis" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1"/>,
+  "Sass":<StackIcon name="sass"  className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
   "NODE.JS": <StackIcon name="nodejs" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
   "VITE": <StackIcon name="vitejs" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
   "MONGODB": <StackIcon name="mongodb" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
@@ -28,6 +32,7 @@ const skillsIcons = {
   "JWT": <span className="w-4 h-4 invisible mt-1"></span>,          // Placeholder
   "TYPESCRIPT": <StackIcon name="typescript" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />,
   "PYTHON": <StackIcon name="python" className="w-5 h-5 grayscale group-hover:grayscale-0 mt-1" />
+
 };
 
 const SkillsComponent = () => {

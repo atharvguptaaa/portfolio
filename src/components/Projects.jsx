@@ -19,7 +19,7 @@ export default function Projects() {
         "A full-stack hotel booking application providing users with a robust interface for seamless reservation management.",
       image: firebnb,
       technologies: ["MongoDB", "Express.js", "React"],
-      link: "https://your-firebnb-link.com",
+      link: "https://github.com/atharvguptaaa/firebnb",
     },
     {
       name: "TypeDash",
